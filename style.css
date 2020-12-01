@@ -1,0 +1,43 @@
+body{
+	margin: 0px; /* needed because sometimes browsers have default margin */
+}
+
+.container{
+	display: flex; /* this activates flexbox */
+	flex-wrap: wrap;
+	justify-content: center;
+}
+
+h1{
+	font-family: fantasy;
+	font-size: 3em;
+	border-bottom: 2px solid pink;
+	border-right: 2px solid pink;
+	width: 400px; /*this modifies the solid pink underline*/
+	text-align: center; /*this centers font above underline*/
+	-moz-box-shadow: 4px 4px 5px #888888;/*mozilla*/
+	-ms-box-shadow:  4px 5px #888888;/*internet explorer*/
+	-webkit-box-shadow: 4px 4px 5px #888888;/*safari, chrome*/
+	-o-box-shadow: 4px 5px #888888;/*opera browser*/
+	box-shadow: 4px 4px 5px #888888;/*still have to mention this command with prefixes above this line*/
+	margin-top: 10px;
+	/*before this command was introduced
+	we had to include commands above with this one*/
+	/*Go to https://www.w3schools.com/cssref/css3_browsersupport.asp
+	to see if property commands are suported by broswers
+	or https://caniuse.com/*/
+	/*margin: 0px;*/
+	/*Sometimes browsers have default margins*/
+	
+}
+
+img{
+	width: 450px; /* We add size here and not under header to make it easier to modify code1 */
+	height: 300px;
+	margin: 10px;
+	transition: all 1s; /* CSS3 i want all the propertities to transision over 1 second*/
+}
+
+img:hover{
+	transform: scale(1.1); /* when i hover i want it to transform by a scale of 1.1*/
+}
